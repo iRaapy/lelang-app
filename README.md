@@ -204,3 +204,13 @@ Ringkasan tabel:
 ## Testing Manual (Postman)
 
 Koleksi Postman dapat diimpor dari `docs/postman_collection.json` (jika disediakan), atau test manual mengikuti urutan endpoint pada bagian "Endpoint Utama" di atas.
+
+## Dokumentasi API
+
+Dokumentasi API interaktif (Scribe) tersedia setelah server berjalan: http://localhost:8000/docs
+Dokumentasi mencakup semua endpoint: autentikasi, manajemen lelang, dan penawaran — lengkap dengan contoh request/response dan fitur "Try It Out".
+
+Generate ulang dokumentasi setelah ada perubahan endpoint:
+```bash
+php artisan scribe:generate
+```
