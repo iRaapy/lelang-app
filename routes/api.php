@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuctionController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\BidController;
+use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/register', [AuthController::class, 'register']);
@@ -19,6 +20,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/auctions/{auction}', [AuctionController::class, 'update']);
     Route::delete('/auctions/{auction}', [AuctionController::class, 'destroy']);
 
-    // Bid
     Route::post('/auctions/{auction}/bids', [BidController::class, 'store']);
+
+    Broadcast::routes(['middleware' => ['auth:sanctum']]);
 });

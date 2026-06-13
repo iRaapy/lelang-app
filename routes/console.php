@@ -10,4 +10,6 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
 
-Schedule::job(new UpdateAuctionStatuses)->everyMinute();
+Schedule::call(function () {
+    (new UpdateAuctionStatuses)->handle();
+})->everyMinute();

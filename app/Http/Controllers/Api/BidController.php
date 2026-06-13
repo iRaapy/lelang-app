@@ -52,8 +52,12 @@ class BidController extends Controller
             }
 
             // Simpan siapa penawar tertinggi SEBELUM bid ini, untuk dikirim notifikasi outbid
-            $previousHighestBid = $auction->highestBid()->first();
+           $previousHighestBid = $auction->highestBid()->first();
 
+\Log::info('DEBUG previousHighestBid', [
+    'previous_highest_bid' => $previousHighestBid?->toArray(),
+    'current_user' => $user->id,
+]);
             // Tandai semua bid sebelumnya sebagai outbid
             Bid::where('auction_id', $auction->id)
                 ->where('status', 'active')
