@@ -189,7 +189,7 @@ Otorisasi kanal didefinisikan di `routes/channels.php`.
 
 ## ERD
 
-Lihat skema database pada `docs/ERD.png` (atau tautan dbdiagram: `<https://dbdiagram.io/d/6a2d20345c789b8acb769f7c>`).
+Lihat skema database pada `docs/erd.png` (atau tautan dbdiagram: `<https://dbdiagram.io/d/6a2d20345c789b8acb769f7c>`).
 
 Ringkasan tabel:
 - `users` — akun (bisa berperan penjual & penawar)
