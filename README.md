@@ -7,8 +7,8 @@ Backend REST API untuk platform lelang daring realtime, dibangun dengan Laravel 
 | NIM | Nama |
 |-----|------|
 | 2401010013 | I Rai Agus Aditya Prayuda |
-| ... | ... |
-| ... | ... |
+| 2401010011 | Ni Putu Reina Puspita |
+| 2401010008 | Dewa Ayu Manisha Candra |
 
 ## Tech Stack
 
