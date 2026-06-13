@@ -189,14 +189,16 @@ Otorisasi kanal didefinisikan di `routes/channels.php`.
 
 ## ERD
 
-Lihat skema database pada `docs/erd.png` (atau tautan dbdiagram: `<https://dbdiagram.io/d/6a2d20345c789b8acb769f7c>`).
+![ERD](docs/erd.png)
+
+[Lihat versi interaktif di dbdiagram.io](https://dbdiagram.io/d/6a2d20345c789b8acb769f7c)
 
 Ringkasan tabel:
+
 - `users` — akun (bisa berperan penjual & penawar)
 - `auctions` — data lelang (relasi ke `seller_id`, `winner_id`)
 - `auction_images` — foto-foto lelang (bonus multi-upload)
 - `bids` — riwayat penawaran (relasi ke `auction_id`, `bidder_id`)
-
 ## Struktur Folder Penting
 
 ## Testing Manual (Postman)
